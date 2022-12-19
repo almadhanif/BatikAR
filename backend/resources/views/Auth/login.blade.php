@@ -46,7 +46,7 @@ class="relative py-16 before:absolute before:inset-0 before:w-full before:h-[50%
                   <div class="text-red-600">{{ $error }}</div>
               @endforeach
           @endif
-          <form action="{{ route('login.action') }}" method="POST" class="space-y-8">
+          <form action="{{ 'index.php'.route('login.action') }}" method="POST" class="space-y-8">
             @csrf
             <div class="space-y-2">
               <label for="email" class="text-white">Email</label>
